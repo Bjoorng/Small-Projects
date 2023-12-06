@@ -1,0 +1,216 @@
+body{
+    background: linear-gradient(90deg, #a1a1a1, rgb(146, 1134, 113));
+    font-family: 'Nova Square', sans-serif;;
+}
+
+.d-none {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.add {
+    height: 30px;
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 32px;
+    font-size: 18px;
+}
+
+.title {
+    font-size: 80px;
+    color: #fff;
+    border: 5px solid #000;
+    padding: 20px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.headCont button {
+    height: 40px;
+    width: 200px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 680px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 15px;
+    border: 5px solid #000;
+    padding: 40px 35px;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchStart {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.searchStart input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.searchStart button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+}
+
+.searchStart button img {
+    width: 16px;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.temperature {
+    font-size: 80px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.city {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.minMax {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.min {
+    font-size: 20px;
+}
+
+.max {
+    font-size: 20px;
+}
+
+.minTemp {
+    font-size: 30px;
+}
+
+.maxTemp {
+    font-size: 30px;
+}
+
+.details {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 80;
+}
+
+.detSec {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px 10px 20px
+}
+
+.hum {
+    max-height: 32px;
+    max-width: 32px;
+}
+
+.wind {
+    max-height: 32px;
+    max-width: 32px;
+}
+
+.humDiv, .windDiv {
+    margin-left: 10px
+}
+
+.humidity, .windSpeed {
+    margin: 0;
+}
+
+.humText, .windText {
+    font-size: 16px;
+    margin: 0;
+}
