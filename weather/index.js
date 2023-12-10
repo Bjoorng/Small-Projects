@@ -92,6 +92,9 @@ const weatherInfo = async function getWeather(element) {
                         <p class="windSpeed"></p>
                         <p class="windText">${data.wind.speed} kph</p>
                       </div>
+                      <div>
+                        <button class="remove">X</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -102,6 +105,16 @@ const weatherInfo = async function getWeather(element) {
 
       const searchBoxes = document.querySelectorAll(".search input");
       const searchBtns = document.querySelectorAll(".search button");
+      
+      const removeBtns = document.querySelectorAll(".remove");
+
+      removeBtns.forEach((e) =>{
+        e.addEventListener("click", () => {
+         card = e.closest(".card");
+         card.classList.add("dNone");
+        });
+      });
+
 
       searchBtns.forEach((searchBtn, index) => {
         let weatherInner = function (element) {
@@ -170,6 +183,9 @@ const weatherInfo = async function getWeather(element) {
                       <p class="windSpeed"></p>
                       <p class="windText">${data.wind.speed} kph</p>
                     </div>
+                    <div>
+                        <button class="remove">X</button>
+                      </div>
                   </div>
                 </div>
               `;
@@ -183,6 +199,13 @@ const weatherInfo = async function getWeather(element) {
           weatherInner(searchBoxes[index].value);
           searchBoxes[index].value = "";
         });
+
+        let removeBtn = document.querySelector(".remove");
+
+        removeBtn.addEventListener("click", () => {
+          card.classList.add("dNone");
+          console.log(card);
+        })
 
         searchBoxes[index].addEventListener("keyup", (e) => {
           if (e.key === "Enter") {

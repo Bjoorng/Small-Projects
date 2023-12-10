@@ -3,10 +3,6 @@ body{
     font-family: 'Nova Square', sans-serif;;
 }
 
-.d-none {
-    display: none;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -67,6 +63,20 @@ body{
     padding: 40px 35px;
     text-align: center;
     margin: 20px 10px 20px 10px;
+    position: relative;
+}
+
+.remove {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    background-color: rgb(255, 118, 55);
+    color: white;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
 }
 
 .search {
@@ -213,4 +223,8 @@ body{
 .humText, .windText {
     font-size: 16px;
     margin: 0;
+}
+
+.dNone {
+    display: none;
 }
