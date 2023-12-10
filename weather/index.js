@@ -103,6 +103,8 @@ const weatherInfo = async function getWeather(element) {
 
       cardsContainer.appendChild(cardTemplate);
 
+      localStorage.setItem(element);
+
       const searchBoxes = document.querySelectorAll(".search input");
       const searchBtns = document.querySelectorAll(".search button");
       
