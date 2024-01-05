@@ -1,0 +1,11 @@
+.container{
+    text-align: center;
+}
+
+#board{
+    background-color: black;
+}
+
+.d-none{
+    display: none;
+}
